@@ -21,7 +21,7 @@ export default function Simulador() {
       <div className="grid gap-3">
         <input type="number" value={valorCIF} onChange={e=>setValorCIF(+e.target.value)} />
         <input type="number" value={unidades} onChange={e=>setUnidades(+e.target.value)} />
-        <div>Total: {money(total)}</div>
+        <div>Total: {money(total,2,"cop","es-co")}</div>
       </div>
     </Card>
   );

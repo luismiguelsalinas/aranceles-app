@@ -1,7 +1,7 @@
-export function money(n, c = 2) {
-  return new Intl.NumberFormat("en-US", {
+export function money(n, c = 2, currency ="USD", locale ="en-US") {
+  return new Intl.NumberFormat(locale, {
     style: "currency",
-    currency: "USD",
+    currency: currency,
     minimumFractionDigits: c,
   }).format(Number.isFinite(n) ? n : 0);
 }
