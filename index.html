@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Aranceles</title>
+  <link rel="stylesheet" href="./output.css">
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- Navbar -->
+  <header class="bg-blue-600 text-white p-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold">📦 Sistema de Aranceles</h1>
+    <button id="logoutBtn" class="bg-red-500 hover:bg-red-600 px-3 py-1 rounded-lg">Cerrar Sesión</button>
+  </header>
+
+  <div class="flex">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-gray-800 text-white min-h-screen p-4">
+      <nav class="space-y-2">
+        <a href="#" class="block p-2 rounded hover:bg-gray-700">Dashboard</a>
+        <a href="#" class="block p-2 rounded hover:bg-gray-700">Control de Paquetes</a>
+        <a href="#" class="block p-2 rounded hover:bg-gray-700">Reportes</a>
+        <a href="#" class="block p-2 rounded hover:bg-gray-700">Configuración</a>
+      </nav>
+    </aside>
+
+    <!-- Contenido principal -->
+    <main class="flex-1 p-6">
+      <h2 class="text-2xl font-semibold mb-4">Lista de Paquetes</h2>
+
+      <!-- Tabla -->
+      <div class="overflow-x-auto bg-white shadow rounded-lg">
+        <table class="min-w-full text-sm text-left border">
+          <thead class="bg-gray-200 text-gray-700">
+            <tr>
+              <th class="px-4 py-2 border">ID</th>
+              <th class="px-4 py-2 border">Descripción</th>
+              <th class="px-4 py-2 border">Estado</th>
+              <th class="px-4 py-2 border">Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="paqueteTable">
+            <!-- Se llenará con JS -->
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+
+  <script src="./src/app.js"></script>
+</body>
+</html>
