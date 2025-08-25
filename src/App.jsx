@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Simulador from "./modules/simulador.jsx";
-import Dashboard from "./modules/Dashboard";
-import Biblioteca from "./modules/Biblioteca";
+import Dashboard from "./modules/dashboard.jsx";
+import Biblioteca from "./modules/biblioteca.jsx";
 // ... importa otros
 
 const NAV = [
