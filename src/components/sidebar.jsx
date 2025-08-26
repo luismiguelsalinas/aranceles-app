@@ -6,6 +6,10 @@ import { LayoutDashboard, Package, BarChart3, Settings, FileText } from "lucide-
 const menu = [
   { name: "Dashboard", path: "/", icon: LayoutDashboard },
   { name: "Tipos de Arancel", path: "/tipos-arancel", icon: FileText },
+  { name: "Clasificación", path: "/clasificacion", icon: Package },
+  { name: "Simulador", path: "/simulador", icon: Package },
+  /*{ name: "Tratados", path: "/tratados", icon: Package },*/
+  { name: "Noticias", path: "/noticias", icon: Package },
   { name: "Control de Paquetes", path: "/paquetes", icon: Package },
   { name: "Reportes", path: "/reportes", icon: BarChart3 },
   { name: "Configuración", path: "/configuracion", icon: Settings },
