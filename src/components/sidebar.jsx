@@ -1,8 +1,11 @@
+//este es el menu lateral 
 import { Link, useLocation } from "react-router-dom";
-import { LayoutDashboard, Package, BarChart3, Settings } from "lucide-react";
+import { LayoutDashboard, Package, BarChart3, Settings, FileText } from "lucide-react";
 
+// Agrega el apartado "Tipos de Arancel" al menú
 const menu = [
   { name: "Dashboard", path: "/", icon: LayoutDashboard },
+  { name: "Tipos de Arancel", path: "/tipos-arancel", icon: FileText },
   { name: "Control de Paquetes", path: "/paquetes", icon: Package },
   { name: "Reportes", path: "/reportes", icon: BarChart3 },
   { name: "Configuración", path: "/configuracion", icon: Settings },
